@@ -15,40 +15,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="esI-rw-fMy">
-                                <rect key="frame" x="5" y="123" width="383" height="656"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="esI-rw-fMy">
+                                <rect key="frame" x="10" y="128" width="373" height="646"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MoodTracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxz-jg-NWn">
-                                        <rect key="frame" x="79.666666666666686" y="0.0" width="224" height="46.666666666666664"/>
+                                        <rect key="frame" x="74.666666666666686" y="0.0" width="224" height="107.66666666666667"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feeling: ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nd-c5-QOm">
-                                        <rect key="frame" x="152.66666666666666" y="106.66666666666666" width="78" height="20"/>
+                                        <rect key="frame" x="147.66666666666666" y="107.66666666666666" width="78" height="107.66666666666666"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="C53-kY-yaI">
-                                        <rect key="frame" x="50" y="186.66666666666669" width="283" height="33"/>
+                                        <rect key="frame" x="50" y="215.33333333333329" width="273" height="107.66666666666666"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="bMw-Rh-zMm">
-                                                <rect key="frame" x="0.0" y="0.0" width="283" height="33"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="273" height="107.66666666666667"/>
                                                 <connections>
                                                     <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="yEa-NC-H97"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
-                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="n8r-4N-5lR">
-                                        <rect key="frame" x="31.666666666666657" y="279.66666666666669" width="320" height="210.66666666666669"/>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="n8r-4N-5lR">
+                                        <rect key="frame" x="26.666666666666657" y="323" width="320" height="107.66666666666669"/>
                                         <connections>
                                             <action selector="dateChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="O2a-bS-aHa"/>
                                         </connections>
                                     </datePicker>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytf-nF-Fpn">
-                                        <rect key="frame" x="137" y="550.33333333333337" width="109" height="33.333333333333371"/>
+                                        <rect key="frame" x="132" y="430.66666666666663" width="109" height="107.66666666666663"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Save Mood"/>
                                         <connections>
@@ -56,7 +56,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On ... you felt ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08p-nj-iNr" userLabel="moodOfDate">
-                                        <rect key="frame" x="132" y="643.66666666666663" width="119.33333333333331" height="12.333333333333371"/>
+                                        <rect key="frame" x="127" y="538.33333333333337" width="119.33333333333331" height="107.66666666666663"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -71,10 +71,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.74117647060000003" green="0.87843137250000003" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="esI-rw-fMy" secondAttribute="trailing" constant="5" id="G3P-Dh-8GB"/>
-                            <constraint firstItem="esI-rw-fMy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="Mij-ky-BjD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="esI-rw-fMy" secondAttribute="bottom" constant="5" id="b78-7g-Irm"/>
-                            <constraint firstItem="esI-rw-fMy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="pjb-37-Jdh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="esI-rw-fMy" secondAttribute="trailing" constant="10" id="59M-iQ-H8m"/>
+                            <constraint firstItem="esI-rw-fMy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="DrF-a4-kgK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="esI-rw-fMy" secondAttribute="bottom" constant="10" id="clA-Ut-8b8"/>
+                            <constraint firstItem="esI-rw-fMy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="vnj-9m-IVV"/>
                         </constraints>
                     </view>
                     <connections>

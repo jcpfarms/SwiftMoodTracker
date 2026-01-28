@@ -66,7 +66,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func saveMood(_ sender: UIButton) {
-        print("button pressed")
         var found : Bool = false
         for date in dates {
             if (date == selectedDate) {
